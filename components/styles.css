@@ -22,11 +22,11 @@ body {
 }
 
 .app {
-  margin: 10%;
+  margin: 1.5em;
 }
 
 .app-box {
-  padding: 1.5rem;
+  padding: 1.5em;
   border-radius: 20px;
   background-color: var(--cc-white);
   display: flex;
@@ -43,6 +43,7 @@ body {
 .app-title {
   margin-top: 20px;
   font-weight: var(--fw-700);
+  font-size: 6vw;
   color: var(--cc-darkBlue);
 }
 
@@ -50,11 +51,60 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
   font-weight: var(--fw-400);
+  font-size: 4.5vw;
   color: var(--cc-grayBlue);
+}
+
+@media only screen and (min-width: 465px) {
+  .app {
+    margin: 2em;
+  }
+}
+
+@media only screen and (min-width: 545px) {
+  .app {
+    margin: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 625px) {
+  .app {
+    margin: 20%;
+  }
+
+  .app-title {
+    font-size: 4vw;
+  }
+
+  .app-paragraph {
+    font-size: 3vw;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
   .app {
     margin: 37%;
+  }
+
+  .app-title {
+    font-size: 1.8vw;
+  }
+
+  .app-paragraph {
+    font-size: 1.3vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .app {
+    margin: 37%;
+  }
+
+  .app-title {
+    font-size: 1.8vw;
+  }
+
+  .app-paragraph {
+    font-size: 1.3vw;
   }
 }
