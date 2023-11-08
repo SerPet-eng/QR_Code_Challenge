@@ -55,6 +55,12 @@ body {
   color: var(--cc-grayBlue);
 }
 
+@media only screen and (min-width: 275px) {
+  .app {
+    margin: 1em;
+  }
+}
+
 @media only screen and (min-width: 465px) {
   .app {
     margin: 2em;
