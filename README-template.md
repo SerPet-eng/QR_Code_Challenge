@@ -10,7 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ##### Mobile Version
 
-![Mobile Version](./screenshots/Screen%20Shot%202023-11-07%20at%2020.28.27.png)
+![Mobile Version](./screenshots/Screen%20Shot%202023-11-09%20at%2021.30.27.png)
 
 ##### Desktop Version
 
@@ -39,90 +39,19 @@ This part may change in the future because there are things that surely I haven'
 
 #### For example:
 
-```html
-<main class="app">
-  <div class="app-box">
-    <img src="./images/image-qr-code.png" alt="QR Code" class="app-image" />
-    <h2 class="app-title">
-      Improve your front-end skills by building projects
-    </h2>
-    <p class="app-paragraph">
-      Scan the QR code to visit Frontend Mentor and take your coding skills to
-      the next level
-    </p>
-  </div>
-  <div class="attribution">
-    <p>
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >.
-    </p>
-    <p>
-      Coded by <a href="https://github.com/SerPet-eng">Christian De Guzman</a>.
-    </p>
-  </div>
-</main>
-```
-
-> As you can see, the `<div class="app-box">` and `<div class="attribution">` had their own content.
-> Seperating the content and put it inside of their respective HTML Element is really important,
-> Especially if we use `display: flex`.
-
-### Continued development
-
-Other thing that need some polish but good enough to meet the requirements is in this CSS of mine:
-
 ```css
-@media only screen and (min-width: 900px) {
-  .app {
-    margin: 37%;
-  }
-}
-```
-
-This **media** stuff is still needs some adjustment but the rest of the code:
-
-```css
-body {
-  font-family: var(--ff-Outfit);
-  background-color: var(--cc-lightGray);
-}
-
 .app {
-  margin: 10%;
-}
-
-.app-box {
-  padding: 1.5rem;
-  border-radius: 20px;
-  background-color: var(--cc-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.app-image {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.app-title {
-  margin-top: 20px;
-  font-weight: var(--fw-700);
-  color: var(--cc-darkBlue);
-}
-
-.app-paragraph {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-weight: var(--fw-400);
-  color: var(--cc-grayBlue);
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
 }
 ```
 
-I'm pretty confident with the result of this code of mine but like I said, it need some **polish** but good enough to meet the requirements. Which in this case is the QR Code Component.
+> This code is suggested by [Raphael Bröderbauer](https://www.frontendmentor.io/profile/DigitaleWeltLibrary) and I rarely use `display: grid` but I can see now how useful this is. Upon my research `display: grid` is a ==two-dimensional layout== module that lets you work along two axes: **_horizontally_** and **_vertically_**.
+
+> _It is best suited for creating complex layouts that require precise placement of elements._
+
+I'll definitely use more `display: grid` to my CSS not only just `display:flex`
 
 ### Useful resources
 
@@ -137,3 +66,7 @@ I'm pretty confident with the result of this code of mine but like I said, it ne
 - GitHub - [Christian De Guzman](https://github.com/SerPet-eng)
 - Frontend Mentor - [@SerPet-eng](https://www.frontendmentor.io/profile/SerPet-eng)
 - Twitter - [@dchristian796](https://twitter.com/dchristian796)
+
+## Acknowledgement
+
+I would like to thank [Raphael Bröderbauer](https://www.frontendmentor.io/profile/DigitaleWeltLibrary) for the **feedback** for this challenge. The solution that Raphael Bröderbauer gave really help a lot to make the code more efficient and have a less code. I really appreciate Raphael Bröderbauer feedback. Looking forward for the next challenge that [Frontend Mentor](https://www.frontendmentor.io/) has to offer to be a _proficient_ Front-End Developer.

@@ -21,17 +21,20 @@ body {
   background-color: var(--cc-lightGray);
 }
 
+/* I updated the code according to the feedback from 'Frontend Mentor comment section' */
 .app {
-  margin: 1.5em;
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
 }
 
+/* This part of code has been updated */
 .app-box {
   padding: 1.5em;
   border-radius: 20px;
   background-color: var(--cc-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 350px;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -40,10 +43,10 @@ body {
   border-radius: 10px;
 }
 
+/*! DELETE: font-size */
 .app-title {
   margin-top: 20px;
   font-weight: var(--fw-700);
-  font-size: 6vw;
   color: var(--cc-darkBlue);
 }
 
@@ -51,66 +54,8 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
   font-weight: var(--fw-400);
-  font-size: 4.5vw;
+  font-size: 1rem;
   color: var(--cc-grayBlue);
 }
 
-@media only screen and (min-width: 275px) {
-  .app {
-    margin: 1em;
-  }
-}
-
-@media only screen and (min-width: 465px) {
-  .app {
-    margin: 2em;
-  }
-}
-
-@media only screen and (min-width: 545px) {
-  .app {
-    margin: 2.5em;
-  }
-}
-
-@media only screen and (min-width: 625px) {
-  .app {
-    margin: 20%;
-  }
-
-  .app-title {
-    font-size: 4vw;
-  }
-
-  .app-paragraph {
-    font-size: 3vw;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .app {
-    margin: 37%;
-  }
-
-  .app-title {
-    font-size: 1.8vw;
-  }
-
-  .app-paragraph {
-    font-size: 1.3vw;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .app {
-    margin: 37%;
-  }
-
-  .app-title {
-    font-size: 1.8vw;
-  }
-
-  .app-paragraph {
-    font-size: 1.3vw;
-  }
-}
+/*! REMOVED: @media */
